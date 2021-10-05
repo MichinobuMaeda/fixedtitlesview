@@ -294,6 +294,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            const SizedBox(height: 16.0),
             FixedTitlesView(
               key: const ValueKey('Test1'),
               height: tableHeight,
@@ -304,6 +305,34 @@ class _MyHomePageState extends State<MyHomePage> {
               colTitles: colTitles,
               rowTitles: rowTitles,
               body: body,
+            ),
+            const SizedBox(height: 16.0),
+            FixedTitlesView(
+              key: const ValueKey('Test2'),
+              height: tableHeight,
+              width: tableWidth,
+              fixedHeight: 36,
+              fixedWidth: 64,
+              origin: Image.asset(
+                'images/mtfujitl.jpg',
+                width: 64,
+                height: 36,
+              ),
+              colTitles: Image.asset(
+                'images/mtfujitr.jpg',
+                width: 576,
+                height: 36,
+              ),
+              rowTitles: Image.asset(
+                'images/mtfujibl.jpg',
+                width: 64,
+                height: 324,
+              ),
+              body: Image.asset(
+                'images/mtfujibr.jpg',
+                width: 576,
+                height: 324,
+              ),
             ),
           ],
         ),
